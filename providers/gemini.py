@@ -1,6 +1,7 @@
 from os     import getenv
 from google import genai
 from dotenv import load_dotenv
+from configure import current_model
 
 load_dotenv()
 
@@ -45,5 +46,5 @@ def chat(current_model:str):
         except Exception as e:
             yield f"Error: {e}\n"
 
-for chunk in chat("gemini-2.0-flash-lite"):
+for chunk in chat(current_model=current_model):
     print(chunk, end="", flush=True)
