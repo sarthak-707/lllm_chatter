@@ -19,6 +19,7 @@ A simple Python CLI chat program using Google’s Gemini API for conversations.
 2. Create a `.env` file in the project root with your Gemini API key.
 3. Use this format in .env: 
     GEMINI_API_KEY=YourApiKey
+4. You can change the model which is being currently used and other parameters in configure file.
 
 ## Note
 Other features will be added slowly.
